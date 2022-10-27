@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/translation"
+    app:startDestination="@id/welcomeScreen">
+
+    <fragment
+        android:id="@+id/welcomeScreen"
+        android:name="com.example.greetingann.welcomeScreen"
+        android:label="fragment_welcome_screen"
+        tools:layout="@layout/fragment_languages" >
+        <action
+            android:id="@+id/action_welcomeScreen_to_languages"
+            app:destination="@id/languages" />
+    </fragment>
+    <fragment
+        android:id="@+id/languages"
+        android:name="com.example.greetingann.languages"
+        android:label="fragment_languages"
+        tools:layout="@layout/fragment_welcome" />
+</navigation>
