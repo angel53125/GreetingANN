@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/translation"
+    android:id="@+id/nav_graph"
     app:startDestination="@id/welcomeScreen">
 
     <fragment
@@ -12,11 +12,16 @@
         tools:layout="@layout/fragment_languages" >
         <action
             android:id="@+id/action_welcomeScreen_to_languages"
-            app:destination="@id/languages" />
+            app:destination="@id/languages"
+            app:popUpTo="@id/languages" />
     </fragment>
     <fragment
         android:id="@+id/languages"
         android:name="com.example.greetingann.languages"
         android:label="fragment_languages"
-        tools:layout="@layout/fragment_welcome" />
+        tools:layout="@layout/fragment_welcome" >
+        <argument
+            android:name="transLang"
+            app:argType="string" />
+    </fragment>
 </navigation>

@@ -2,9 +2,13 @@
     <string name="app_name">GreetingANN</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="lang_choice">Choose language</string>
+    <string name = "welcome"> Welcome Please Choose a language </string>
     <string-array name="spin_lang">
         <item>Spanish</item>
         <item>English</item>
         <item>French</item>
     </string-array>
+    <string name = "english"> Hello</string>
+    <string name = "spanish"> Hola</string>
+    <string name = "french"> Bonjour </string>
 </resources>
